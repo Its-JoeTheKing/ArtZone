@@ -1,0 +1,195 @@
+body {
+    font-family: "Cairo";
+    background: rgb(20, 20, 20);
+    color:#007cff;
+}
+.nav-tit {
+    position: absolute;
+    margin: 10px;
+    margin-left: 20px;
+    background:linear-gradient(to right bottom,blue,cyan);
+    color: white;
+    border-radius: 2px;
+    padding: 10px;
+    font-family: "Poppins";
+}
+ul {
+    float: right;
+}
+ul a {
+    text-decoration: none;
+    margin-right: 100px;
+    display: inline;
+    position: relative;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 50px;
+    color: #007cff;
+}
+ul a:hover {
+    transition: 1s;
+    background: #007cff;
+    color: white;
+}
+a i {
+    font-size: 18px;
+}
+ul a li {
+    list-style-type: none;
+    display: inline;
+    font-size: 22px;
+
+}
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 2000;
+    background: rgba(32, 32, 32, 0.5);
+    border-bottom: 1px solid rgb(37, 37, 37);
+    transition: 1s top;
+}
+.s1 {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    margin-top: 80px;
+}
+.s-left {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    justify-content: center;
+    align-content: center;
+}
+.s-left h1 {
+    font-size: 50px;
+    font-family: "Poppins";
+    color: white;
+    width: 70%;
+    margin-top: 20%;
+    margin-left: 15%;
+
+}
+.s-right {
+    margin-top: 10px;
+    width: 50%;
+    position: relative;
+}
+.s-right img {
+    height: 40%;
+    position: absolute;
+    box-shadow: 0px 0px 10px 0.5px rgb(0, 102, 255) ;
+}
+.see {
+    height: 50px;
+    width: 20%;
+    background: linear-gradient(to right,rgb(0, 81, 255),rgb(0, 255, 34));
+    border-radius: 50px;
+    border: none;
+    margin-left: 15%;
+}
+.see2 {
+    height: 50px;
+    width: 20%;
+    background: transparent;
+    border: 2px solid cyan;
+    border-radius: 50px;
+    margin-left: 10px;
+}
+.see a {
+    color: white;
+    font-weight: bold;
+    font-family: "Cairo";
+    text-decoration: none;
+    font-size: 20px;
+}
+.see2 a {
+    color: white;
+    font-weight: bold;
+    font-family: "Cairo";
+    text-decoration: none;
+    font-size: 20px;
+}
+.s2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    margin-top: 50%;
+    left: 0;
+    top: 0;
+    color: white;
+}
+.s2 .s-left img {
+    width: 80%;
+    height: 60%;
+    margin-top: 20%;
+    margin-left: 10%;
+}
+.s2 .s-right h1 {
+    width: 20%;
+    border: 2px solid white;
+    margin-top: 20%;
+    margin-left: 10%;
+    text-align: center;
+}
+.s2 .s-right p {
+    margin-left: 10%;
+    width: 80%;
+}
+@media screen and (max-width: 700px) {
+    ul {
+        display: none;
+    }
+    header {
+        height: 12%;
+        background: rgb(26, 25, 25);
+    }
+    .s1,.s2 {
+        display: block;
+        height: 100%;
+    }
+    .s2 {
+        margin-top: 150%;
+    }
+    .s-left,.s-right {
+        width: 100%;
+        height: 100%;
+
+    }
+    .s2 .s-left {
+        width: 100%;
+        top: 0;
+        margin-top: 0;
+    }
+    .s1 .s-right {
+        display: none;
+    }
+    .s1 h1 {
+        font-size: 30px;
+    }
+    .see,.see2 {
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 40px;
+    }
+    .see2 {
+        margin-top: 10px;
+    }
+    .s2 .s-left img {
+        height: 80%;
+    }
+    .s2 .s-left {
+        height: 80%;
+    }
+    .s2 .s-right h1 {
+        width: 40%;
+    }
+}
